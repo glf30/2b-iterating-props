@@ -188,22 +188,6 @@ Notice that our data is named `articles` and contains an array with three object
 
 23. Instead of loading just one `<Article />` component, we would like to loop over the articles array and create an article for each item in the array. the `map` function makes this easy to write
 
-```jsx
-function App() {
-  let articles = []; // data was shortened to conserve space
-
-  return (
-    <div className="App container-fluid">
-      <h1>My Travel Blog</h1>
-      <div className="row">
-        {articles.map((oneArticle) => (
-          <Article />
-        ))}
-      </div>
-    </div>
-  );
-}
-```
 
 24. Save and check the browser. You should see the text "Hello I'm An Article!" appearing 3 times.
 
