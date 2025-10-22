@@ -230,7 +230,7 @@ function Article(props) {
 export default Article;
 ```
 
-27. Give the image element a class style, a src attribute, and also an alt attribute like so `<img className="img-fluid" src={} alt="featured" />`. In order to display the correct img source url we will refer to the props object that has a property we passed in called `contents`.
+27. Give the image element a class style, a src attribute, and also an alt attribute like so `<img className="img-fluid" src={} alt="featured" />`. In order to display the correct img source url we will refer to the `content` prop we passed in.
 
 ```jsx
 <img className="img-fluid" src={props.content.img} alt="featured" />
