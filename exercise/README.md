@@ -7,18 +7,7 @@
 We are going to make an archive page for a blog site that displays a list of recent articles.
 
 ## Set Up And Run A New React App
-
-1. Open the terminal to the `exercise` directory--the simplest way to do so is to right-click on the `exercise` folder in VS Code and select "Open in Integrated Terminal".
-
-2. In the terminal, type `npm create vite .` and hit enter/return. The `.` is important--this will create a new Vite project in the current directory.
-
-3. It will warn you that there are files here currently. Use the arrow keys and Enter/Return to select "Ignore files and continue". This allows us to keep our readme and any data/assets files we have in our new project folder.
-
-4. Choose React and then JavaScript from the following menus, using arrow keys and Enter/Return.
-
-5. Install dependencies by entering `npm install` in the terminal.
-
-6. Run the app by typing `npm run dev` in the terminal. This will provide a clickable link to open the app in your default browser, or you can navigate to the localhost URL in your browser.
+Create a new app with `npm create vite@latest`
 
 ## Install Bootstrap
 
