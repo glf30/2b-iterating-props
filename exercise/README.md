@@ -11,7 +11,7 @@ Create a new app with `npm create vite@latest`
 
 ## Install Bootstrap
 
-4. Next let's import Bootstrap a front-end framework that provides CSS code to make our project beautiful. In terminal type `npm i bootstrap@5.2.3`. This will install the package into our project.
+4. Next let's import Bootstrap a front-end framework that provides CSS code to make our project beautiful. In terminal type `npm i bootstrap`. This will install the package into our project.
 
 ## Import Bootstrap
 
