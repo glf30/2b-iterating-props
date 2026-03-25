@@ -1,74 +1,102 @@
-# Props Exercise
+# Props + Iteration Exercise: Travel Blog
 
-![Exercise Preview](https://i.imgur.com/p3AtNe8.png)
+## Setup
 
-## Exercise overview
+Create a new React app with Vite.
 
-We are going to make an archive page for a blog site that displays a list of recent articles.
+---
 
-## Set Up And Run A New React App
-Create a new app with `npm create vite@latest`
+## Assignment
 
-## Install Bootstrap
+Build a simple travel blog page that displays a list of articles.
 
-4. Next let's import Bootstrap a front-end framework that provides CSS code to make our project beautiful. In terminal type `npm i bootstrap`. This will install the package into our project.
+Your app should be broken into **multiple components** and use **props** to pass data between them.
 
-## Import Bootstrap
+---
 
-6. Then in VS Code, open the **/src/main.jsx** file and import the bootstrap css like by typing the following line `import 'bootstrap/dist/css/bootstrap.css';` placing it just after the import for ReactDOM and just before our import for **index.css**. This way we can override the bootstrap styles with our own inside index.css if we wish to.
+## Requirements
 
-## Exercise Assets
+### Data 
 
-7. Move the image files from the `assets` directory outside the React project directory into the directory `public`. This way the images will be accessible to your application.
+Create an `articles` array with at least 3 objects.
 
-## Creating the App Component
+Each article must have:
+- `id`
+- `title`
+- `body`
+- `img` (path to an image in your `public` folder)
+- `featured` (true/false)
 
-8. Open **/src/App.jsx**. This file is an example component that React starts with. You can delete everything in this file. Then at the top of the file you can import React and create a functional component named `App`. Don't forget to export it.
+---
 
-9. Create a `<div>` inside of the `return()` statement.
+### Components
 
-10. Add `className="App container-fluid"` into the `<div>` element. This will apply some CSS styles to it.
+You must have:
+- `ArticleList`
+- `Article`
 
-```jsx
-function App() {
-  return <div className="App container-fluid"></div>;
+---
+
+### Goal
+
+Display all articles on the page.
+
+Each article should show:
+- Title  
+- Body  
+- Image  
+
+If an article is featured, display something like:
+**"Featured Post"**
+
+---
+
+## Notes
+
+- Images should live in the `public` folder (ex: `/images/paris.jpg`)
+
+---
+
+## Basic Styling (optional)
+
+Add this to your `index.css`:
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
 }
 
-export default App;
-```
-
-11. Then inside the `<div>` create a heading `<h1>My Travel Blog</h1>`.
-
-```jsx
-function App() {
-  return (
-    <div className="App container-fluid">
-      <h1>My Travel Blog</h1>
-    </div>
-  );
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
 }
-```
 
-12. Save the file and visit the browser to make sure our heading is appearing.
-
-13. Back inside **/src/App.jsx** below our heading place `<div className="row"></div>`.
-
-```jsx
-function App() {
-  return (
-    <div className="App container-fluid">
-      <h1>My Travel Blog</h1>
-      <div className="row"></div>
-    </div>
-  );
+h1 {
+  text-align: center;
 }
-```
 
-Your task is to create an `articles` array of at least 3 article objects.
-Each article has: id, title, body, and img.
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-Define the `articles` array in App.jsx.
+.article {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
 
-Create
-- an ArticleList component that uses map to render articles
-- an Article component that renders a single article
+.article img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.article h2 {
+  margin: 0 0 10px;
+}
