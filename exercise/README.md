@@ -53,7 +53,7 @@ If an article is featured, display something like:
 
 ## Notes
 
-- Images should live in the `public` folder (ex: `/images/paris.jpg`)
+- Images should live in the `public` folder (ex: `/images/bonaire.jpg`)
 
 ---
 
