@@ -1,12 +1,8 @@
-# Props + Iteration Exercise: Travel Blog
-
-## Setup
-
-Create a new React app with Vite.
-
----
+# Iterating Props: Travel Blog
 
 ## Assignment
+
+Create a new React app with Vite.
 
 Build a simple travel blog page that displays a list of articles.
 
