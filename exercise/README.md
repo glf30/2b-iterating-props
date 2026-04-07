@@ -57,7 +57,7 @@ If an article is featured, display something like:
 
 ---
 
-## Basic Styling (optional)
+## Basic Styling
 
 Add this to your `index.css`:
 
