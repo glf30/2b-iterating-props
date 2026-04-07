@@ -14,7 +14,7 @@ Your app should be broken into **multiple components** and use **props** to pass
 
 ### Data 
 
-Create an `articles` array with at least 3 objects.
+Create an `articles` array with at least 3 objects in App.jsx.
 
 Each article must have:
 - `id`
