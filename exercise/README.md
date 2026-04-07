@@ -96,3 +96,10 @@ h1 {
 .article h2 {
   margin: 0 0 10px;
 }
+
+```
+Wrap your App.jsx in a div with a className `App`
+
+Wrap the code in your ArticleList.jsx with a className `article-list`
+
+Wrap the code in your Article.jsx with a className `article`
